@@ -12,6 +12,7 @@
   Widget build(BuildContext context){
 
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home:  QuizApp(),
     );
   }
@@ -32,19 +33,19 @@
 
       List<Map> allQuestions=[ {
         "question": "Who discovered gravity?",
-        "options":["Rohan Wankhede", "Einstein","Marie Curie","Isaac Newton"],
+        "options":["Thomas Edison", "Einstein","Marie Curie","Isaac Newton"],
         "correct answer":3
       },
       {"question":"Who is the founder of SpaceX?",
-      "options":["Bill gates", "Zukyaa","Elon Musk", "Dolly Chaiwalla"],
+      "options":["Bill gates", "Zukyaa","Elon Musk", "Pavel Durov"],
       "correct answer":2
       },
-      {"question":"who was the dictator of Nazi germany?",
-      "options":["Narendra Modi","Adolf Hitler","Kim Jong ","Vladimir Putin"],
+      {"question":"Who is the founder of Google?",
+      "options":["Sunadar Pichai","Lary Page","Elon Musk","Vladimir Putin"],
       "correct answer":1
       },
       {"question":"Primary source of Energy",
-      "options":["Moon","Sun","Food","She"],
+      "options":["Moon","Sun","Food","Star"],
       "correct answer":1
       },
       {"question":"Who wrote National Anthem?",
@@ -168,6 +169,9 @@
 
                             )
                           )),
+                          const SizedBox(
+                            height:25,
+                          ),
 
                           ///Option 2
                           SizedBox(
@@ -190,6 +194,9 @@
                                 fontSize:20,
                                 fontWeight:FontWeight.w500
                                 ,)))),
+                                 const SizedBox(
+                            height:25,
+                          ),
 
                                 ///Option 3
 
@@ -213,6 +220,9 @@
                                 fontSize:20,
                                 fontWeight:FontWeight.w500
                                 ,)))),
+                                 const SizedBox(
+                            height:25,
+                          ),
 
                                 ///Option 4
                                  SizedBox(
@@ -238,6 +248,9 @@
                                 )
                                 )
                                 ),
+                                 const SizedBox(
+                            height:25,
+                          ),
 
                                
 
